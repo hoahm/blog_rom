@@ -6,4 +6,10 @@ class ArticlesRelation < ROM::Relation[:sql]
   # def all
   #   select(:id, :name).order(:id)
   # end
+
+  def query(keyword)
+    return unless keyword
+
+    where("title ILIKE '%?%'", keyword)
+  end
 end

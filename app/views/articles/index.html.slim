@@ -1,0 +1,10 @@
+.row
+  .col-md-8
+    = link_to 'New article', new_article_path, class: 'btn btn-primary'
+
+.col-sm-8.blog-main
+  - @articles.each do |article|
+    = render 'article', article: article
+
+.col-sm-3.col-sm-offset-1
+  = render 'layouts/shared/sidebar'
