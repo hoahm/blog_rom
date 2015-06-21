@@ -26,12 +26,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -41,5 +35,43 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  gem 'rspec-rails'
+  gem 'spring-commands-rspec'
+  gem 'guard-rspec'
+  gem 'faker'
+  gem 'factory_girl_rails'
+
+  gem 'shoulda-matchers'
+  gem 'shoulda-callback-matchers'
+
+  gem 'database_cleaner'
+  gem 'did_you_mean'
+  gem 'mailcatcher'
+  gem 'rubocop', require: false
+  gem 'brakeman', require: false
 end
 
+group :development do
+  # Better error page for Rack app
+  gem 'better_errors'
+
+  # Retrieve the binding of a method's caller in MRI
+  gem 'binding_of_caller'
+
+  # Google Chrome extension for Rails
+  gem 'meta_request'
+
+  # Mutes assets pipeline log messages
+  gem 'quiet_assets'
+
+  # Make rails 4.0 log details more colorful
+  gem 'shog'
+
+  # Automatically reload your browser when 'view' files are modified
+  gem 'guard-livereload', require: false
+end
+
+group :production do
+  gem 'rails_12factor'
+end
