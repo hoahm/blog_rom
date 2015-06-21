@@ -85,3 +85,6 @@ gem 'autoprefixer-rails'
 gem 'modernizr-rails', '~> 2.7.1'
 gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
+
+# Reactjs
+gem 'react-rails', '~> 1.0'
