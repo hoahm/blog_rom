@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    @articles = rom.relation(:articles)
+    @articles = rom.relation(:articles).as(:articles)
   end
 
   def new

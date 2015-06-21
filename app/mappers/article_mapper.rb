@@ -3,7 +3,7 @@ class ArticleMapper < ROM::Mapper
 
   # specify model and attributes ie
   #
-  # model Article
+  model Article
   #
   # attribute :name
   # attribute :email
