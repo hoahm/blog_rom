@@ -75,3 +75,13 @@ end
 group :production do
   gem 'rails_12factor'
 end
+
+# Slim templates generator
+gem 'slim-rails'
+
+# Twitter bootstrap
+gem 'bootstrap-sass'
+gem 'autoprefixer-rails'
+gem 'modernizr-rails', '~> 2.7.1'
+gem 'font-awesome-rails'
+gem 'jquery-ui-rails'
