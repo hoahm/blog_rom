@@ -50,7 +50,7 @@ group :development, :test do
   gem 'mailcatcher'
   gem 'rubocop', require: false
   gem 'brakeman', require: false
-  gem 'pry-rails'
+  # gem 'pry-rails'
 end
 
 group :development do

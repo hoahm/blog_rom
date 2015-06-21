@@ -12,4 +12,8 @@ class ArticlesRelation < ROM::Relation[:sql]
 
     where("title ILIKE '%?%'", keyword)
   end
+
+  def by_id(id)
+    where(id: id)
+  end
 end

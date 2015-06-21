@@ -1,2 +1,12 @@
-h1 Articles#show
-p Find me in app/views/articles/show.html.slim
+.col-sm-8.blog-main
+  .blog-post
+    h2.blog-post-title = @article.title
+    p.blog-post-meta
+      | January 1, 2014 by
+      a href="#"  Mark
+    p = @article.content
+    p.pull-right
+      = link_to 'View', article_path(@article.id), class: 'btn btn-info btn-xs'
+      = link_to 'Edit' ,edit_article_path(@article.id), class: 'btn btn-warning btn-xs'
+      = link_to 'Delete', article_path(@article.id), method: :delete, class: 'btn btn-danger btn-xs'
+

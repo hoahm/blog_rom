@@ -1,0 +1,13 @@
+.col-sm-8.blog-main
+  = form_for @article, class: 'form-inline' do |f|
+    = @article.errors.full_messages if @article.errors
+
+    .form-group
+      label Title
+      = f.text_field :title, class: 'form-control'
+
+    .form-group
+      label Content
+      = f.text_area :content, class: 'form-control'
+
+    = f.submit
