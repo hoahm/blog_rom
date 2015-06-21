@@ -88,3 +88,8 @@ gem 'jquery-ui-rails'
 
 # Reactjs
 gem 'react-rails', '~> 1.0'
+
+# Ruby Object Mapper
+gem 'rom', '0.6.0'
+gem 'rom-sql', '0.4.0'
+gem 'rom-rails', '0.3.0'
